@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #191830;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.sub-cont {
+    width: 65%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.087);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.059) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    transition: 1s ease-in-out;
+    backdrop-filter: blur(30px);
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card1 {
+    background: linear-gradient(rgb(255, 213, 0), rgb(255, 72, 0));
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    left: 200px;
+    transform: translateY(130px);
+    animation-name: updown1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes updown1 {
+    0% {
+        transform: translateY(130px);
+    }
+
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+.card2 {
+    background: linear-gradient(180deg, rgb(11, 227, 227), rgb(4, 23, 116));
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 170px;
+    right: 200px;
+    transform: translateY(-100px);
+    animation-name: downup1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes downup1 {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(120px);
+    }
+}
+
+.hour {
+    backdrop-filter: blur(70px);
+    width: 20%;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+        rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+        rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    transition: 1s ease-in-out;
+    backdrop-filter: blur(30px);
+    margin: 0px 5px;
+}
+
+.minute {
+    width: 20%;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+        rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+        rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    transition: 1s ease-in-out;
+    margin: 0px 5px;
+    backdrop-filter: blur(30px);
+}
+
+.second {
+    width: 20%;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+        rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+        rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    transition: 1s ease-in-out;
+    backdrop-filter: blur(30px);
+    margin: 0px 5px;
+}
+
+.AMPM {
+    width: 15%;
+    height: 40%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+        rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+        rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    transition: 1s ease-in-out;
+    backdrop-filter: blur(30px);
+    margin: 0px 5px;
+}
+
+.colons {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 790px;
+}
+
+.colon1 {
+    color: white;
+    font-size: 10rem;
+    position: absolute;
+    left: 170px;
+}
+
+.colon2 {
+    color: white;
+    font-size: 10rem;
+    position: relative;
+    right: -23px;
+}
+
+.hour-hand {
+    color: white;
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: 9rem;
+    font-weight: 600;
+}
+
+.minute-hand {
+    color: white;
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: 9rem;
+    font-weight: 600;
+}
+
+.second-hand {
+    color: rgb(246, 202, 3);
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: 9rem;
+    font-weight: 600;
+
+}
+
+.ampm-hand {
+    color: rgb(255, 179, 0);
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1150px) {
+    .colons {
+        display: none;
+    }
+
+    .card1 {
+        width: 200px;
+        margin-right: 10px;
+        height: 200px;
+    }
+
+    .card2 {
+        width: 200px;
+        margin-left: 10px;
+        height: 200px;
+    }
+
+    .sub-cont {
+        height: 600px;
+        width: 250px;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .hour {
+        width: 130px;
+        height: 130px;
+    }
+
+    .clock-hand {
+        font-size: 80px;
+    }
+
+    .minute {
+        width: 130px;
+        height: 130px;
+    }
+
+    .minute-hand {
+        font-size: 80px;
+    }
+
+    .second {
+        width: 130px;
+        height: 130px;
+    }
+
+    .second-hand {
+        font-size: 80px;
+    }
+
+    .AMPM {
+        height: 100px;
+        width: 100px;
+    }
+
+    .ok {
+        font-size: 5rem;
+    }
+
+    .ok1 {
+        font-size: 3rem;
+    }
+}
